@@ -4,11 +4,13 @@ import time
 import subprocess
 import uiautomation as auto
 from Mongo_Client import Mongo_Client
+from BWField import BWField
 
 
 class UIScrapy():
     def __init__(self):
-        self.db = Mongo_Client()
+        self.client = Mongo_Client()
+        self.OTSVFields = self.client.db["OTSV"]
 
         pass
 
@@ -34,11 +36,17 @@ class UIScrapy():
         return item.GetNextSiblingControl()
 
 
-    def ExpandTreeItem(self,treeItem: auto.TreeItemControl):
+    def ExpandTreeItem(self, treeItem: auto.TreeItemControl):
+        lst = []
         for item, depth in auto.WalkTree(treeItem, getFirstChild=self.GetFirstChild, getNextSibling=self.GetNextSibling, includeTop=True, maxDepth=1):
             # or item.ControlType == auto.ControlType.TreeItemControl
             if isinstance(item, auto.TreeItemControl):
                 print(item.Name)
+                arr = item.Name.split(']')
+                field = BWField(arr[0][1:].strip(), arr[1].strip())
+                print(field)
+                self.OTSVFields.insert_one(field.__dict__)
+
 
     def ReadTechnicalNameFromBexQuery(self):
         note = auto.WindowControl(searchDepth=1, RegexName = "BEx Query Designer*")
