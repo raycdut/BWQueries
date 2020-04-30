@@ -5,13 +5,15 @@ import subprocess
 import uiautomation as auto
 from Mongo_Client import Mongo_Client
 from BWField import BWField
-
+from constans import QueryList
 
 class UIScrapy():
     def __init__(self):
         self.client = Mongo_Client()
-        self.OTSVFields = self.client.db["OTSV"]
-
+        self.CurrentQueryName = ''
+        self.db = None
+        self.QueryWindow = None
+        self.dbAllinOne = self.client.db["allinone"]
         pass
 
     def GetFirstChild(self,item: auto.Control):
@@ -24,9 +26,9 @@ class UIScrapy():
                 while not child:
                     tryCount += 1
                     child = item.GetFirstChildControl()
-                    if child or tryCount > 20:
+                    if child or tryCount > 200:
                         break
-                    time.sleep(0.05)
+                    time.sleep(1)
                 return child
         else:
             return item.GetFirstChildControl()
@@ -42,26 +44,115 @@ class UIScrapy():
             # or item.ControlType == auto.ControlType.TreeItemControl
             if isinstance(item, auto.TreeItemControl):
                 print(item.Name)
-                arr = item.Name.split(']')
-                field = BWField(arr[0][1:].strip(), arr[1].strip())
-                print(field)
-                self.OTSVFields.insert_one(field.__dict__)
+                if item.Name != 'Key Figures':
+                    arr = item.Name.split(']')
+                    field = BWField(arr[0][1:].strip(), arr[1].strip(),self.CurrentQueryName)
+                    print(field)
+                    self.db.insert_one(field.__dict__)
+                    self.dbAllinOne.insert_one(field.__dict__)
 
 
     def ReadTechnicalNameFromBexQuery(self):
-        note = auto.WindowControl(searchDepth=1, RegexName = "BEx Query Designer*")
-        #note.SetActive()
-        #note.SetTopmost()
+        if self.QueryWindow is None:
+            self.QueryWindow = auto.WindowControl(searchDepth=1, RegexName = "BEx Query Designer*")
 
-        RCColumn = note.PaneControl(searchDepth=1, Name='Rows/Columns')
+        RCColumn = self.QueryWindow.PaneControl(
+            searchDepth=1, Name='Rows/Columns')
         for c, d in auto.WalkControl(RCColumn):
             if isinstance(c, auto.TreeControl):
                self.ExpandTreeItem(c)
 
-    
+    def OpenQueryByName(self, queryName):
+        if self.QueryWindow is None:
+            self.QueryWindow = auto.WindowControl(searchDepth=1, RegexName="BEx Query Designer*")
+        
+        self.QueryWindow.SetActive()
+        #self.QueryWindow.SetTopmost()
 
+        b = self.QueryWindow.ToolBarControl(Name="Standard")
+
+        ctrlOpen = b.MenuItemControl(Name="Open...")
+
+        if ctrlOpen is None:
+            return
+        
+        ctrlOpen.Click(10)
+
+        dlgOpen = auto.WindowControl(RegexName="Open Query*")
+
+        find = dlgOpen.ListItemControl(Name="Find")
+        if find:
+            find.Click(10)
+
+        ctrlEdit = dlgOpen.EditControl(Name="Search Term")
+        if ctrlEdit:
+            ctrlEdit.SendKeys(self.CurrentQueryName,0.05)
+
+        btnFind = dlgOpen.ButtonControl(Name="Find")
+        if btnFind:
+            btnFind.Click(5)
+
+        btnOpen = dlgOpen.ButtonControl(AutomationId = "btnOK")
+        if btnOpen:
+            btnOpen.Click(10)
+
+        trycnt = 1
+        while trycnt <10:
+            try:
+                self.QueryWindow.SetActive()
+                trycnt = 11
+            except:
+                print("screen not response")
+                time.sleep(5)
+                trycnt = trycnt+1
+
+        
+        pnlInfoProvider = self.QueryWindow.PaneControl(Name="InfoProvider")
+
+        if pnlInfoProvider:
+            trycnt = 1
+            while trycnt < 10:
+                try:
+                    for c, d in auto.WalkControl(pnlInfoProvider):
+                        if isinstance(c, auto.TreeControl):
+                            trycnt = 11
+                            break
+                                    
+                except:
+                    print("screen no response! try again")
+                    time.sleep(5)
+                    trycnt = trycnt+1                    
+        
+
+        # click Technical name
+        v = self.QueryWindow.ToolBarControl(Name="View")
+
+        techname = v.MenuControl(Name="Technical Names")
+        if techname:
+            ischecked = False
+            while not ischecked:
+                techname.Click()
+                for c in techname.GetChildren():
+                    if c.Name == "[Key] Text":
+                        value = c.GetLegacyIAccessiblePattern().State
+                        if value == 1048592:
+                            ischecked = True
+                            break
+
+
+    def GetTechnicalNameFromQueries(self):
+        for queryName in QueryList:
+            print(queryName)
+            self.CurrentQueryName = queryName
+            self.db = self.client.db[queryName]
+
+            #open query
+            self.OpenQueryByName(queryName)
+            #read technical name from query
+            self.ReadTechnicalNameFromBexQuery()
 
 if __name__ == "__main__":
     uiscrapy = UIScrapy()
-    uiscrapy.ReadTechnicalNameFromBexQuery()
+    uiscrapy.GetTechnicalNameFromQueries()
+    #uiscrapy.ReadTechnicalNameFromBexQuery()
     

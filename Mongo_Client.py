@@ -9,7 +9,7 @@ class Mongo_Client():
         self.MONGODB_SERVER = 'localhost'
         #self.MONGODB_PORT = 32773
         self.MONGODB_PORT = 27017
-        self.MONGODB_DB = "OTSV_Fields"
+        self.MONGODB_DB = "QueriesFields"
 
         self.client = MongoClient(
             self.MONGODB_SERVER, self.MONGODB_PORT)

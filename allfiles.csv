@@ -1,0 +1,517 @@
+﻿description,technicalName
+Goods Issue Month,0CALMONTH
+Key Figures,Z_ZMF_MC12_T002
+Sales Doc. Item,0S_ORD_ITEM
+Delivery,0DELIV_NUMB
+Delivery Item,0DELIV_ITEM
+Shipment Numb - Master,ZTKNUM_M
+Carrier (SH),ZTDLNR_SH
+Ship-To TZone,0SHIP_TO__ZLZONE
+Ship-To State,0SHIP_TO__0REGION
+Transportation Planning Point,0TRAPPOINT
+Ship-To Postal,0SHIP_TO__0POSTAL_CD
+Shipping Type (SH),0SHIPPTYP
+Route (OH),0ROUTE
+Late Order Code,ZKDKG2
+Dt - (DH) Goods Issue Actual,0ACT_GI_DTE
+Batch Number,0BATCH
+Dt - (DH) Created On,0CREATEDON
+Dt - (DH) Goods Issue Actual Mth,ZGI_MON
+Dt - (DH) Goods Issue Actual Qtr,ZGI_QUR
+Dt - (DH) Goods Issue Actual Year,ZGI_YRY
+Dt - (DH) Goods Issue Actual Week,ZGI_WEK
+Dt - (DH) Goods Issue Plan,ZWADAT
+STAS - Delivery Status (OI),0DLV_STS
+Dt - (OI) Customer Requested Del FSL,ZEDATU_LF
+Dt - (OI) Customer Requested Del LSL,ZEDATU_LL
+Dt - (OI) Customer Requested Del (Confirmed),ZEDATU_LC
+Dt - (OI) Goods Issue Plan,ZWADAT_LF
+Dt - (OI) Goods Issue Plan (Confirmed),ZWADAT_LC
+Dt - (OI) Goods Issue Plan Last,ZWADAT_LL
+High Level Doc. Item,0BBP_PAR_NO
+Your Reference (Trade),ZITM_OI__ZIHREZ_OI
+Incoterms,0INCOTERMS
+Incoterms 2,0INCOTERMS2
+Dt - (STO) Last GR Date,ZITM_OI__ZLSTGR_DT
+Sales Doc. Type,0DOC_TYPE
+FLAG - Trade/STO/Consign.,ZSTO_IND
+Reason for Order,0ORD_REASON
+STAS - Overall status,ZGBSTA
+Plant State,0PLANT__0REGION
+Delivery Priority,ZASOLD_TO__ZLPRIO
+Value Center,0PROFIT_CTR__ZBVALCTR
+Ship To Area,0SHIP_TO__ZRWRLDARE
+Dt - (OI) ATP first,ZITM_OI__ZFDDCBA
+Dt - (OI) ATP last,ZITM_OI__ZATPDT_OI
+Plan Product,0MATERIAL__ZBPLNPROD
+Dangerous Goods Indicator,ZTKNUM_M__ZCONT_DG
+Dt - (SH) Check In Planned,0DTCHKIN_PL
+Dt - (SH) Loading End Planned,0DTLOADE_PL
+Dt - (SH) Loading Start Planned,0DTLOADB_PL
+Dt - (SH) Shipment Start Planned,0DTSHP_B_PL
+Dt - (SH) Loading Start Actual,0DTLOADBACT
+Dt - (SH) Loading End Actual,0DTLOADEACT
+Dt - (SH) Shipment Start Actual,0DTSHP_BACT
+Tm - (SH) Shipment End Actual,ZUATEN
+Tm - (SH) Check In Actual,ZUAREG
+Tm - (SH) Loading End Actual,ZUALEN
+Tm - (SH) Loading Start Actual,ZUALBG
+Tm - (SH) Shipment Start Actual,ZUATBG
+Tm - (SH) Check In Planned,ZUPREG
+Tm - (SH) Shipment Completion Planned,ZUPABF
+Tm - (SH) Loading End Planned,ZUPLEN
+Tm - (SH) Loading Start Planned,ZUPLBG
+Tm - (SH) Shipment End Planned,ZUPTEN
+Tm - (SH) Shipment Start Planned,ZUPTBG
+Tm - (SH) Transp. Planning End,ZUZDIS
+Tm - (SH) Shipment Completion Actual,ZUZABF
+Tm - (OI) Customer Requested Del LSL,ZEZEIT_LL
+Tm - (OI) Customer Requested Del FSL,ZEZEIT_LF
+Payment Terms (Master),ZASOLD_TO__0PMNTTRMS
+Payment Terms (OH),ZPMNTTROH
+Payment Terms (OI),0PMNTTRMS
+Loading Point,0LOAD_PT
+Dt - (DH) POD Date,ZPODAT
+STAS - POD Status,ZPDSTK
+Variance Reason,ZGRUNDPOD
+Business,0PROFIT_CTR__ZBBUSINES
+Business Group,0PROFIT_CTR__ZBBUSGRP
+Management Group,0PROFIT_CTR__ZBDIVSION
+Performance Center,0PROFIT_CTR__ZBPERFCTR
+Trade Product,0MATERIAL__0EXTMATLGRP
+Spec Stock Partner,ZSBPARTNR
+Dt - (M) Material Doc Posting,ZBUDAT
+Plant - Shipping,0PLANT
+STAS - Billing Status (DH),ZFKSTK
+Late Delv Code,ZVSTGA_A
+Late Ship Code,ZVSTGA_D
+Voyage No,ZEXTI1
+Carrier Booking,ZTKNUM_M__ZCAR_BOOK
+Carrier (Direct Leg),ZTKNUM_M__ZFAGENT_4
+Carrier (Main Leg),ZTKNUM_M__ZFAGENT_2
+Carrier (Preli. Leg),ZTKNUM_M__ZFAGENT_1
+Carrier (Return Leg),ZTKNUM_M__ZFAGENT_5
+Carrier (Subs. Leg),ZTKNUM_M__ZFAGENT_3
+Cont / Trailer ID,ZTKNUM_M__ZTRAILRID
+Contract Carrier,ZTKNUM_M__ZLIFNR
+Descript of Shipment,ZTKNUM_M__ZDSCR_SH
+No. of Containers,ZTKNUM_M__ZADD04
+Number of Stops,ZTKNUM_M__ZADD03_SH
+Ocean Booking Number,ZTKNUM_M__ZOCEAN_NO
+Seal Number,ZTKNUM_M__ZSEAL_NO
+Equipment Type (SH),ZTKNUM_M__ZADD02_SH
+Supplement 1,ZTKNUM_M__ZADD01_SH
+STAS - Tender Status,ZTKNUM_M__ZTNDRST
+Vessel Name,ZTKNUM_M__ZVESSEL
+XM Partner,ZTKNUM_M__ZXMPARTNR
+STAS - Goods Movement Status,ZITM_DI__0GOODSMV_ST
+Dt - (DI) Created On,ZITM_DI__ZERDAT_D
+Mat. freight GRP (Current),0MAT_PLANT__ZMFRGR
+Material (AOB),ZINVN_MAT
+Plan Product (AOB),ZINVN_MAT__ZBPLNPROD
+Trade Product (AOB),ZINVN_MAT__0EXTMATLGRP
+Delivery Type,0DEL_TYPE
+Customer Condition Group 3,ZKDKG3
+STAS - Check In Status,ZCHKI_STA
+STAS - Load Status,ZLOAD_STA
+STAS - Order Status,ZCR_ORDST
+STAS - OTC Status,ZOTC_STA
+FLAG - Carrier is diff on DN/SH,ZCARR_DIF
+FLAG - Route is diff on OH/SH,ZROUT_DIF
+FLAG - Z2 Delivery Block,ZFLG_Z2B
+Dt - (STO) Committed,ZDAT01_F
+Dt - (STO) Delivery,ZEINDT_F
+Dt - (STO) Statistic Del,ZSLFDT_F
+Tm - (STO) Delivery,ZSCHTM_F
+Purchasing Item Number,0OI_EBELP
+Our Reference,ZUNSEZ
+Purchasing Document Type,0DOCTYPE
+Purchasing Document,0OI_EBELN
+Plant - Recvng plt in STO,ZRECPLANT
+Reference Order Item,0POSNV
+Reference Order Numb,0VBELV
+STAS - Rejection Status,0REJECTN_ST
+Your Reference (STO),ZPURREF
+Batch Number - Alternate,ZBATMAT__ZALT_BAT
+Plant of Manufacture,ZBATMAT__ZMANUPLNT
+LSC Name,ZSHIPPINT__ZLSCNAME
+Goods Issue Date,0CALDAY
+Goods Issue Year,0CALYEAR
+Goods Issue Week,0CALWEEK
+Goods Issue Quarter,0CALQUARTER
+Create By (OI),ZERNAM_O
+Ship To Country,0SHIP_TO__ZRCTRY
+Ship To Region,0SHIP_TO__ZRREGION
+Ship From Area,0PLANT__ZRWRLDARE
+Ship From Region,0PLANT__ZRREGION
+STAS - Shipment document Status,ZSTTRG
+Ship To Customer,0SHIP_TO
+Sold To Customer,0SOLD_TO
+Global Customer,0SOLD_TO__ZPCE_GLOB
+Ship From Country,0PLANT__ZRCTRY
+Carrier (Ocean),ZTKNUM_M__ZCAR_OCN
+Carrier (Primary),ZTKNUM_M__ZCAR_PRI
+Plant Type,0PLANT__ZATWRT_PT
+Company Code,0COMP_CODE
+Company Group,0COMP_CODE__ZCOMP_GRP
+Profit Center,0PROFIT_CTR
+InfoProvider,0INFOPROV
+Changed By (SH),ZTKNUM_M__ZAENAM_S
+Dt - (SH) Changed On,ZTKNUM_M__ZAEDAT_S
+Route (SH),ZTKNUM_M__0ROUTE
+Carrier (DH),ZITM_DI__0FORWAGENT
+Route (DH),ZITM_DI__0ROUTE
+Shipping Type (DH),ZITM_DI__0SHIPPTYP
+Shipment Number,ZTKNUM
+Material,0MATERIAL
+Dt - (M) Material Doc Create,ZCPUDT
+Dt - First Border Crossing Doc. Creation,ZERDAT_BI
+Dt - (OH) Created On,ZERDAT_OH
+Dt - (SH) Check In Actual,0DTCHKINACT
+Dt - (SH) FD Delivery to Port Actual,ZTKNUM_M__ZDTP_AD
+Dt - (SH) FD Departure Date Actl,ZTKNUM_M__ZDEPRT_AD
+Tm - (SH) FD Departure Date Actl,ZTKNUM_M__ZDEPRT_AT
+Dt - (SH) FD FstBookArr Actual,ZTKNUM_M__ZVESLA_AD
+Dt - (SH) CL AC First,ZTKNUM_M__ZTDAC_F
+Dt - (SH) CL AW First,ZTKNUM_M__ZTDAW_F
+Dt - (SH) CL AW Last,ZTKNUM_M__ZTDAW_L
+Dt - (SH) CL NW Last,ZTKNUM_M__ZTDNW_L
+Dt - (SH) CL RJ Last,ZTKNUM_M__ZTDRJ_L
+Dt - (SH) CL RL Last,ZTKNUM_M__ZTDRL_L
+Dt - (SH) Created On,ZTKNUM_M__ZERDAT_S
+Dt - (SH) FD Arrival Plan,ZTKNUM_M__ZARR_PD
+Dt - (SH) CL RB First,ZTKNUM_M__ZTDRB_F
+Dt - (SH) CL RJ First,ZTKNUM_M__ZTDRJ_F
+Dt - (SH) CL RL First,ZTKNUM_M__ZTDRL_F
+Dt - (SH) CL EX Last,ZTKNUM_M__ZTDEX_L
+Dt - (SH) CL EX First,ZTKNUM_M__ZTDEX_F
+Dt - (SH) Tender,ZTKNUM_M__ZTNDRDAT
+Shipping Point,0SHIP_POINT
+Business  (AOB),ZINV_MATP__ZBBUSINES
+Business Group (AOB),ZINV_MATP__ZBBUSGRP
+Management Group (AOB),ZINV_MATP__ZBDIVSION
+Performance Center (AOB),ZINV_MATP__ZBPERFCTR
+Value Center (AOB),ZINV_MATP__ZBVALCTR
+Profit Center (AOB),ZINV_MATP__0PROFIT_CTR
+Availability Check Indicator (AOB),ZINV_MATP__ZMTVFP
+Shipping Conditions,ZITM_OI__0SHIP_COND
+Dt - (DH)Transp. Planning Date,ZITM_DI__ZTDDAT
+STAS - Shipment has EX Status,ZF_EX
+STAS - Shipment has RB Status,ZF_RB
+STAS - Shipment has RJ Status,ZF_RJ
+STAS - Shipment has RL Status,ZF_RL
+STAS - Shipment has R2 Status,ZF_R2
+STAS - Shipment has R3 Status,ZF_R3
+STAS - Shipment has RM Status,ZF_RM
+Tm - First Border Crossing Doc. Creation,ZERZET_B
+Dt - (SH) CL RB Last,ZTKNUM_M__ZTDRB_L
+Dt - (SH) FD Arrival Actual,ZTKNUM_M__ZARR_AD
+Shipment Type (SH),0SHTYP
+Dt - (SH) CL CF First,ZTKNUM_M__ZTDCF_F
+Dt - (SH) CL CF Last,ZTKNUM_M__ZTDCF_L
+Dt - (SH) CL CO First,ZTKNUM_M__ZCOBDT_F
+Dt - (SH) CL CO Last,ZTKNUM_M__ZCOBDT_L
+Dt - (SH) FD Delivery to Port Plan,ZTKNUM_M__ZDTP_PD
+Dt - (SH) FD FstBookArr Plan,ZTKNUM_M__ZVESLA_PD
+Dt - (SH) Shipment End Planned,ZTKNUM_M__0DTSHP_E_PL
+FLAG - Shipment Indicator,ZIND_SH
+Dt - (DH) Delivery Date,ZITM_DI__0SHIP_DATE
+Dt - (DH) Delivery Month,ZITM_DI__ZSHIP_MON
+Dt - (SH) Shipment End Actual,0DTSHP_EACT
+Special Processing Indicator,ZTKNUM_M__0TRASPECIAL
+Forwarding Agent Tracking ID,ZTKNUM_M__ZTN_TRID
+Tendering Text,ZTKNUM_M__ZTNDR_TXT
+Mat. freight GRP (Historical),ZMFRGR
+Tm - (DI) GI actual,ZWAUHR_ID
+FLAG - Qty is diff on OI/DI,ZQTY_DIF
+Market Segment Bus. Grp,ZCR_CUSTE__ZMKTGLBG
+Market Segment Business,ZCR_CUSTE__ZMKTGLBUS
+STAS - Shipment costs calc.,ZTKNUM_M__ZFBGST
+STAS - Transp. Planning (DI),ZITM_DI__ZTRSTA
+Forwarding Agent Carr.,ZFAGENT
+Reason for Rejection,0REASON_REJ
+Spec No. for Mat.,ZSPECIDM
+FLAG - Customer Pickup,ZFLAG_CPU
+Dt - (SH) Shipment Completion Planned,0DTCOMPL_PL
+Local Currency,0LOC_CURRCY
+Sales Organization,0SALESORG
+FLAG - In Transit,ZF_INTRA
+Tm - (SH) Created On,ZTKNUM_M__ZERZET_S
+Transportation Group,0MATERIAL__ZTRAGR
+Act. Shipment Completion Month,ZACT_MON
+Act. Shipment Completion Quarter,ZACT_QUR
+Act. Shipment Completion Year,ZACT_YRY
+STAS - Billing Status (DI),ZFKSTA
+Cust Material Desc,ZARKTX
+Cust. Purch Ord No.,ZITM_OI__ZBSTKD
+Sold To Country,0SOLD_TO__0COUNTRY
+Customer Material,0CUST_MATRL
+Dt - (OI) Customer Requested Del First,ZITM_OI__ZFCRDD
+Dt - (OI) Customer Requested Del Last,ZITM_OI__ZLCRDD
+Dt - (SH) Transp. Planning End,0TRAPLANDT
+Geo Business Area (Receiving Plant),ZRECPLANT__ZRWRLDARE
+Number of Schedule Line,ZNMBRSL
+Order Entry Month,ZORCR_MON
+Order Entry Year,ZORCR_YRY
+Prod.Hierarchy,0PROD_HIER
+Product Source,0PROFIT_CTR__ZPC_CLS
+CSR Manager (Current),ZMSS_SHTO__ZCSR_MNGU
+CSR (Assigned),ZPERNR_C
+CSR Manager (Assigned),ZPERNR_C__ZMTRMNGR
+Dt - (SH) CL PR First,ZTKNUM_M__ZTDPR_F
+Dt - (SH) CL PR Last,ZTKNUM_M__ZTDPR_L
+Order Entry Quarter,ZORCR_QUA
+Start month-End Month input,ZCALMONTH
+Date Basis,ZF_DTBASE
+Controlling Area,0CO_AREA
+Customer Group 3,0CUST_GRP3
+Dt - Shelf Expiration Date,ZBATMAT__ZVFDAT
+Volume Unit,0VOLUMEUNIT
+FLAG - Batch Split,ZF_BATCH
+FLAG - Intra-Country,ZF_INTRO
+Dt - (SH) FD Arrival at Port of Ld Actual,ZTKNUM_M__ZAPOL_AD
+Dt - (SH) FD Arrival at Port of Ld Planned,ZTKNUM_M__ZAPOL_PD
+Dt - (SH) FD Dlv to Final Dest Actual,ZTKNUM_M__ZDFD_AD
+Dt - (SH) FD Dlv to Final Dest Planned,ZTKNUM_M__ZDFD_PD
+Company - Shipping,0PLANT__ZCOMPCODE
+Sales Document,0DOC_NUMBER
+ZA Partner,ZITM_OI__ZAPARTNR
+FLAG - Max Weight (SH),ZTKNUM_M__ZFA_MAXW
+Dt - (OI) Material Available Date First,ZMBDAT_F
+Dt - (OI) Material Available Date Last,ZMBDAT_L
+Commodity/Imp.Code,ZSTAWN
+QN Number,0NOTIFICATN
+CSR (Current),ZMSS_SHTO__ZMSS_CSR
+Field Seller,ZCR_CUSTE__ZCR_FLDSL
+Sales Director,ZCR_CUSTE__ZCR_SLDIR
+Sales Manager,ZCR_CUSTE__ZCR_SALEM
+Market Segment,ZCR_CUSTE__ZCR_MKSG
+Market Segment Parent,ZCR_CUSTE__ZCR_MKSGP
+Sales Channel,ZCR_CUSTE__ZCR_CHANL
+Dt - (OI) Material Available Date (Confirmed),ZMBDAT_C
+Dt - (OI) Transp. Planning Date Last,ZTDDAT_LL
+Dt - (OI) Transp. Planning Date (Confirmed),ZTDDAT_LC
+FLAG - Late Delivery Doc. Creation,ZFLAG_LD
+Customer PO Date,ZBSTDK
+Create By (DI),ZITM_DI__ZERNAM_D
+Dt - (SH) FD DSV Arrived Discharge Berth Actual,ZTKNUM_M__ZADCB_AD
+Dt - (SH) FD DSV Arrived Discharge Berth Plan,ZTKNUM_M__ZADCB_PD
+Tm - (SH) FD DSV Arrived Discharge Berth Actual,ZTKNUM_M__ZADCB_AT
+Tm - (SH) FD DSV Arrived Discharge Berth Plan,ZTKNUM_M__ZADCB_PT
+Dt - (SH) FD DSV Arrived Loading Berth Actual,ZTKNUM_M__ZALB_AD
+Dt - (SH) FD DSV Arrived Loading Berth Plan,ZTKNUM_M__ZALB_PD
+Tm - (SH) FD DSV Arrived Loading Berth Actual,ZTKNUM_M__ZALB_AT
+Tm - (SH) FD DSV Arrived Loading Berth Plan,ZTKNUM_M__ZALB_PT
+Dt - (SH) FD DSV ETA Discharge Port at Firming Actual,ZTKNUM_M__ZEDPAF_AD
+Dt - (SH) FD DSV ETA Discharge Port at Firming Plan,ZTKNUM_M__ZEDPAF_PD
+Tm - (SH) FD DSV ETA Discharge Port at Firming Actual,ZTKNUM_M__ZEDPAF_AT
+Tm - (SH) FD DSV ETA Discharge Port at Firming Plan,ZTKNUM_M__ZEDPAF_PT
+Dt - (SH) FD DSV ETA Discharge Port Updates Actual,ZTKNUM_M__ZEDPU_AD
+Dt - (SH) FD DSV ETA Discharge Port Updates Plan,ZTKNUM_M__ZEDPU_PD
+Tm - (SH) FD DSV ETA Discharge Port Updates Actual,ZTKNUM_M__ZEDPU_AT
+Tm - (SH) FD DSV ETA Discharge Port Updates Plan,ZTKNUM_M__ZEDPU_PT
+Dt - (SH) FD DSV ETA Load Port at Firming Actual,ZTKNUM_M__ZELPAF_AD
+Dt - (SH) FD DSV ETA Load Port at Firming Plan,ZTKNUM_M__ZELPAF_PD
+Tm - (SH) FD DSV ETA Load Port at Firming Actual,ZTKNUM_M__ZELPAF_AT
+Tm - (SH) FD DSV ETA Load Port at Firming Plan,ZTKNUM_M__ZELPAF_PT
+Dt - (SH) FD DSV ETA Load Port Updates Actual,ZTKNUM_M__ZELPU_AD
+Dt - (SH) FD DSV ETA Load Port Updates Plan,ZTKNUM_M__ZELPU_PD
+Tm - (SH) FD DSV ETA Load Port Updates Actual,ZTKNUM_M__ZELPU_AT
+Tm - (SH) FD DSV ETA Load Port Updates Plan,ZTKNUM_M__ZELPU_PT
+Dt - (SH) FD DSV Laycan Start Actual,ZTKNUM_M__ZLCST_AD
+Dt - (SH) FD DSV Laycan Start Plan,ZTKNUM_M__ZLCST_PD
+Tm - (SH) FD DSV Laycan Start Actual,ZTKNUM_M__ZLCST_AT
+Tm - (SH) FD DSV Laycan Start Plan,ZTKNUM_M__ZLCST_PT
+Dt - (SH) FD DSV Laycan Stop Actual,ZTKNUM_M__ZLCSP_AD
+Dt - (SH) FD DSV Laycan Stop Plan,ZTKNUM_M__ZLCSP_PD
+Tm - (SH) FD DSV Laycan Stop Actual,ZTKNUM_M__ZLCSP_AT
+Tm - (SH) FD DSV Laycan Stop Plan,ZTKNUM_M__ZLCSP_PT
+Dt - (SH) FD DSV Firm Nomination Actual,ZTKNUM_M__ZFMN_AD
+Dt - (SH) FD DSV Firm Nomination Plan,ZTKNUM_M__ZFMN_PD
+Tm - (SH) FD DSV Firm Nomination Actual,ZTKNUM_M__ZFMN_AT
+Tm - (SH) FD DSV Firm Nomination Plan,ZTKNUM_M__ZFMN_PT
+Dt - (SH) FD DSV Completed Loading (Ocean BOL) Actual,ZTKNUM_M__ZCLOB_AD
+Dt - (SH) FD DSV Completed Loading (Ocean BOL) Plan,ZTKNUM_M__ZCLOB_PD
+Tm - (SH) FD DSV Completed Loading (Ocean BOL) Actual,ZTKNUM_M__ZCLOB_AT
+Tm - (SH) FD DSV Completed Loading (Ocean BOL) Plan,ZTKNUM_M__ZCLOB_PT
+Dt - (SH) FD DSV Completed Unloading Actual,ZTKNUM_M__ZCPU_AD
+Dt - (SH) FD DSV Completed Unloading Plan,ZTKNUM_M__ZCPU_PD
+Tm - (SH) FD DSV Completed Unloading Actual,ZTKNUM_M__ZCPU_AT
+Tm - (SH) FD DSV Completed Unloading Plan,ZTKNUM_M__ZCPU_PT
+Dt - (SH) FD DSV Depart Loading Berth Actual,ZTKNUM_M__ZDLDB_AD
+Dt - (SH) FD DSV Depart Loading Berth Plan,ZTKNUM_M__ZDLDB_PD
+Tm - (SH) FD DSV Depart Loading Berth Actual,ZTKNUM_M__ZDLDB_AT
+Tm - (SH) FD DSV Depart Loading Berth Plan,ZTKNUM_M__ZDLDB_PT
+RE Partner,ZITM_OI__ZREPARTNR
+MAS Calendar Year,ZMAS_YEAR
+MAS Calendar Year/Month,ZMAS_MON
+MAS Calendar Year/Quarter,ZMAS_QTR
+MAS Calendar Year/Week,ZMAS_WEK
+Dt - MAS,ZMASDAT
+FLAG DSV - Accurate Goods Issue - Backdated Goods Issue,ZF_AGIBGI
+FLAG DSV - ETA Performance – Discharge,ZF_ETAPDC
+FLAG DSV - ETA Performance – Loading,ZF_ETAPLD
+FLAG DSV - Laycan Performance,ZF_LAYCPF
+FLAG DSV - Timely Goods Issue – Posting Date,ZF_TGIPD
+FLAG DSV - Timely Order Entry,ZF_TOENT
+Customer Segmentation,ZCR_CUSTE__ZCR_PRIOR
+Tm - (OI) Created On,0CREA_TIME
+Customer Purchasing Type,ZMR_BSARK
+Order Method,ZMR_BSARK__ZOF_METHD
+Plant Management Site,0PLANT__ZCR_STCD
+Plant Location,0PLANT__0CITY
+Your Reference (ShipTo),ZITM_OI__ZIHREZ_E
+Business Segment,ZCR_CUSTE__ZCR_BUSEG
+Dt - (SH) FD RMV Load Tndr. Transm. Rcvd,ZTKNUM_M__ZLTTR_AD
+Tm - (SH) FD RMV Load Tndr. Transm. Rcvd,ZTKNUM_M__ZLTTR_AT
+Dt - (SH) FD RMV Load Tndr. Acceptance,ZTKNUM_M__ZLTA_AD
+Tm - (SH) FD RMV Load Tndr. Acceptance,ZTKNUM_M__ZLTA_AT
+Dt - (SH) FD RMV Load Tndr. Rejection_Incumbent,ZTKNUM_M__ZLTR_AD
+Tm - (SH) FD RMV Load Tndr. Rejection_Incumbent,ZTKNUM_M__ZLTR_AT
+Dt - (SH) FD RMV OTD Pre Check,ZTKNUM_M__ZOTDPC_AT
+Tm - (SH) FD RMV OTD Pre Check,ZTKNUM_M__ZOTDPC_AD
+YQ Partner (OI),ZITM_OI__ZENDUSRNO
+YQ Partner (OH),ZITM_OI__ZFUNC_PAR
+Dt - (SH) FD DSV NOR Loading Berth Actual,ZTKNUM_M__ZNLB_AD
+Tm - (SH) FD DSV NOR Loading Berth Actual,ZTKNUM_M__ZNLB_AT
+Dt - MAR,ZDTNPGI
+Dt - (SH) FD Sailing Date Plan,ZTKNUM_M__ZSAIL_PD
+Late Delv Reason Category,ZMR_RFDAD__ZCR_LDRC
+Delivery Date (Confirmation),ZEINDT
+STO Deletion Indicator,0DELET_IND
+Tm - (DH) Dlv Arrival at Customer,ZMR_DNNO__ZDELARR_T
+Dt - (DH) Dlv Arrival at Customer,ZMR_DNNO__ZDELARR_D
+Dt - (DH) Dlv Load End,ZMR_DNNO__ZDELLOA_D
+Tm - (DH) Dlv Load End,ZMR_DNNO__ZDELLOA_T
+Dt - (DH) Dlv Planned Delivery,ZMR_DNNO__ZDELPD_D
+Tm - (DH) Dlv Planned Delivery,ZMR_DNNO__ZDELPD_T
+Tm - (DH) Dlv Planned Ship,ZMR_DNNO__ZDELOR_T
+Dt - (DH) Dlv Planned Ship,ZMR_DNNO__ZDELOR_D
+Dt - (DH) Dlv Shipment Completion,ZMR_DNNO__ZDELSHI_D
+Tm - (DH) Dlv Shipment Completion,ZMR_DNNO__ZDELSHI_T
+Shuttle Shipment,ZTKNUMS
+FLAG - Backlog (Do Not Use),ZFLG_BKLG
+FLAG - Backlog,ZF_BAKLOG
+Tm - (SH) FD Flight Arrival Actual,ZTKNUM_M__ZFLIA_AT
+Tm - (SH) FD Flight Arrival Plan,ZTKNUM_M__ZFLIA_PT
+Dt - (SH) FD Flight Arrival Actual,ZTKNUM_M__ZFLIA_AD
+Dt - (SH) FD Flight Arrival Plan,ZTKNUM_M__ZFLIA_PD
+Delivery (Inbound),ZDELI_NUM
+Delivery Item (Inbound),ZDELI_ITM
+Dt - (DI) Inbound Delivery (LA),ZEINDTLA
+Dt - (DI) Order Acknowledge (AB),ZEINDTAB
+Dt - (DI) PO Schedule Line Item,0SCL_DELDAT
+Dt - (DI) Precedence,ZEINDTLG
+FLAG - SED Synch,ZF_SEDSYN
+MAR Calendar Year,ZNCALYER
+MAR Calendar Year/Month,ZNCALMON
+MAR Calendar Year/Quarter,ZNCALQTR
+MAR Calendar Year/Week,ZNCALWEK
+FLAG - Order Block,ZORDBLOCK
+FLAG - Price Missing,ZF_MISPRC
+FLAG - Billing Block,0BILL_BLOCK
+FLAG - Delivery Block,0DEL_BLOCK
+Material Prime Indicator,0MATERIAL__ZSPC_PRIM
+STAS - Credit,ZCMGST
+FLAG - Delayed Goods Receipt,ZF_DELGR
+GR Processing Time,ZCH_WEBAZ
+Ship-To City,0SHIP_TO__0CITY
+Billing Document,0BILL_NUM
+Dt - (B) Billing Date,0BILL_DATE
+STAS - Reason for Exception Trigger by Fwding Agent (EX),ZTKNUM_M__ZEXTS_RD
+STAS - Reason for Rebook (RB),ZTKNUM_M__ZRBTS_RD
+STAS - Reason for Reject by Load Site (RL),ZTKNUM_M__ZRLTS_RD
+Customer Distinction,ZCR_CUSTE__0CUST_CLASS
+YG Partner Manager,ZITM_OI__ZYGPARMG
+FLAG - Cust Req Late,ZCREQ_FLG
+Sold To Payer,0SOLD_TO__0PAYER
+MRP Controller - Shipping,0MAT_PLANT__0MRP_CONTRL
+MRP Controller - Receiving,ZMAT_PLNT__0MRP_CONTRL
+Scheduler - Receiving,ZMAT_PLNT__ZMRP_RECI
+Scheduler - Shipping,0MAT_PLANT__ZMRP_RECI
+FLAG - Delivery Block (Item),ZDLV_BLK
+SMC Spec (Do Not Use),ZSMC_SPEC
+QAC Trade Spec (Do Not Use),ZTRD_AUTH
+Dt - (SH) FD R2 Second Rebooking Actual,ZTKNUM__ZR2TS_AD
+Dt - (SH) FD R2 Second Rebooking Plan,ZTKNUM__ZR2TS_PD
+Dt - (SH) FD R3 Third Rebooking Actual,ZTKNUM__ZR3TS_AD
+Dt - (SH) FD R3 Third Rebooking Plan,ZTKNUM__ZR3TS_PD
+Dt - (SH) FD Date Changes Actual,ZTKNUM__ZCHANG_AD
+STAS - Reason for Deviation (Date Changes),ZTKNUM__ZVSTGA_DC
+Dt - (SH) FD RM Manual Rebooking Actual,ZTKNUM__ZRMTS_AD
+Dt - (SH) FD RM Manual Rebooking Plan,ZTKNUM__ZRMTS_PD
+Dt - (SH) FD LastBookArr Actual,ZTKNUM__ZLBAD_AD
+Dt - (SH) FD LastBookArr Plan,ZTKNUM__ZLBAD_PD
+Dt - (SH) FD 1st Transshipment Port Arrival Actual,ZTKNUM__ZFTPA_AD
+Dt - (SH) FD 1st Transshipment Port Arrival Plan,ZTKNUM__ZFTPA_PD
+Dt - (SH) FD 1st Transshipment Port Departure Actual,ZTKNUM__ZFTPD_AD
+Dt - (SH) FD 1st Transshipment Port Departure Plan,ZTKNUM__ZFTPD_PD
+Dt - (SH) FD 2nd Transshipment Port Arrival Actual,ZTKNUM__ZSTPA_AD
+Dt - (SH) FD 2nd Transshipment Port Arrival Plan,ZTKNUM__ZSTPA_PD
+Dt - (SH) FD 2nd Transshipment Port Departure Actual,ZTKNUM__ZSTPD_AD
+Dt - (SH) FD 2nd Transshipment Port Departure Plan,ZTKNUM__ZSTPD_PD
+Dt - (SH) FD B/L Received Date Actual,ZTKNUM__ZBLRD_AD
+Dt - (SH) FD B/L Received Date Plan,ZTKNUM__ZBLRD_PD
+QAC (Do Not Use),ZSPC_QAC
+Dt - (SH) Carrier Arrival for Pickup Actual,ZTKNUM_M__ZCAFP_AD
+Tm - (SH) Carrier Arrival for Pickup Actual,ZTKNUM_M__ZCAFP_AT
+Dt - (SH) Carrier Arrival for Pickup Plan,ZTKNUM_M__ZCAFP_PD
+Tm - (SH) Carrier Arrival for Pickup Plan,ZTKNUM_M__ZCAFP_PT
+YG Partner,ZITM_OI__ZYGPARTRN
+YG Partner (Dont Use),ZITM_OI__ZYGPARTNR
+FLAG - Shipping Type is diff on DN/SH,ZSHTP_DIF
+FLAG TV - Load Cons Relevant,ZTKNUM__ZFTV_LCR
+FLAG TV - OTD Relevant,ZTKNUM__ZFTV_OTD
+FLAG TV - RTV Relevant,ZTKNUM__ZFTV_RTV
+TV Load Cons Reason,ZTKNUM__ZRTV_LC
+TV OTD Reason,ZTKNUM__ZRTV_OTD
+TV RTV Reason,ZTKNUM__ZRTV_RTV
+FLAG - Deli./Load date is diff,ZDDAT_DIF
+Shipment Text 502 Internal Note,ZTKNUM_M__ZSHIP502
+FLAG - Back Up Lane,ZITM_OI__ZF_BULANE
+Dt - (SH) FD Document Packet Sent Actual,ZTKNUM_M__ZDOCPS_AD
+Dt - (SH) FD Confirmed on Board Actual,ZTKNUM_M__ZOCBOL_AD
+Dt - (SH) FD Flight Departure Date Actual,ZTKNUM_M__ZFLID_AD
+Dt - (SH) Shipment Completion Actual,0DTCOMPLACT
+Dt - (SH) FD Sailing Date Actual,ZTKNUM_M__ZSAIL_AD
+Dt - (SH) CL NW First,ZTKNUM_M__ZTDNW_F
+Dt - (SH) CL AC Last,ZTKNUM_M__ZTDAC_L
+Mode of Transportation (DN),0SHIPPTYP__ZMODE_TR
+Mode of Transportation (SH),ZSHIPPTYP__ZMODE_TR
+Reference Document No. (DH),ZITM_DI__ZXBLNR_DH
+Storage Conditions,0MATERIAL__ZRAUBE
+Storage Conditions (AOB),ZINVN_MAT__ZRAUBE
+FLAG MPC - RB Impact,ZF_RBI
+FLAG MPC - Risk Detection,ZF_MRD
+FLAG MPC - Rollover,ZF_ROLL
+FLAG MPC - Same Month Change,ZF_MSM
+FLAG MPC - Timely Booking,ZF_TB
+FLAG MPC - Timely GI,ZF_TMGI
+FLAG MPC - Timely OE,ZF_TMO
+FLAG MPC - Timely Re-Booking,ZF_TRB
+FLAG MPC - Timely Site Load,ZF_TSL
+FLAG MPC - Timely Sail,ZF_TMS
+Dt - Ori. Goods Issue Date,ZDTOPGI
+Ori. Goods Issue Month,ZOGI_MON
+Ori. Goods Issue Quarter,ZOGI_QTR
+Ori. Goods Issue Week,ZOGI_WEEK
+Ori. Goods Issue Year,ZOGI_YEAR
+Dt - (SH) FD Cut-off at Departure,ZTKNUM_M__ZDEPCO_PD
+STAS - MPC MAR Delayed or Advanced,ZSTA_AOD
+Dt - (SH) FD Vessel Arr Plan-0,ZTKNUM_M__ZVESEL_PD
+Plant Location - Recvng STO,ZRECPLANT__0CITY
+Planning Site,0PLANT__ZSOPLOCID
+Planning Site - Recvng STO,ZRECPLANT__ZSOPLOCID
+Supply Family,0MATERIAL__ZSPLYFAM
+Business Defined Field,0MAT_PLANT__ZFIELD5
+Stocking Strategy,0MAT_PLANT__ZFIELD6
+Dt - (SH) AIR FD 1st Transshipment Port Arrival Actual,ZTKNUM_M__ZTSAA1_AD
+Dt - (SH) AIR FD 1st Transshipment Port Departure Actual,ZTKNUM_M__ZTSAD1_DD
+Goods Issue Month Only,ZONLYMO
+Goods Issue Quarter Only,ZONLYQTR
+Goods Issue Week Only,ZONLYWK
+QAC,ZSPECIDH__ZSAUTHGRP
+SMC,ZSPECIDH__ZDOWSMC
+Dt - (OI) Created On,ZERDAT_O
+Dt - (STO) Created On,0DOC_DATE
+Dt - (OI/STO) Created On,ZDATOHSTO
