@@ -54,7 +54,11 @@ class UIScrapy():
 
     def ReadTechnicalNameFromBexQuery(self):
         if self.QueryWindow is None:
-            self.QueryWindow = auto.WindowControl(searchDepth=1, RegexName = "BEx Query Designer*")
+            self.QueryWindow = auto.WindowControl(searchDepth=1, RegexName="BEx Query Designer*")
+            
+       
+       #self.QueryWindow.MoveCursorToInnerPos()
+       #Mouse move (-1334,886)
 
         RCColumn = self.QueryWindow.PaneControl(
             searchDepth=1, Name='Rows/Columns')
@@ -126,11 +130,25 @@ class UIScrapy():
 
         # click Technical name
         v = self.QueryWindow.ToolBarControl(Name="View")
+     
+        techname = v.MenuItemControl(Name="Rows/Columns")
+        if techname:
+            
+            trycnt = 1
+            while trycnt < 10:
+                try:
+                    techname.Click()
+
+                except:
+                    print("screen no response! try again")
+                    time.sleep(5)
+                    trycnt = trycnt+1
 
         techname = v.MenuControl(Name="Technical Names")
         if techname:
             ischecked = False
             while not ischecked:
+                
                 techname.Click()
                 for c in techname.GetChildren():
                     if c.Name == "[Key] Text":
