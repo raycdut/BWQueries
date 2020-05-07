@@ -44,7 +44,7 @@ class UIScrapy():
             # or item.ControlType == auto.ControlType.TreeItemControl
             if isinstance(item, auto.TreeItemControl):
                 print(item.Name)
-                if item.Name != 'Key Figures':
+                if item.Name != 'Key Figures' and item.Name != 'Open Order by Status KFs SchLn':
                     arr = item.Name.split(']')
                     field = BWField(arr[0][1:].strip(), arr[1].strip(),self.CurrentQueryName)
                     print(field)
@@ -138,6 +138,7 @@ class UIScrapy():
             while trycnt < 10:
                 try:
                     techname.Click()
+                    trycnt = 11
 
                 except:
                     print("screen no response! try again")
@@ -149,7 +150,16 @@ class UIScrapy():
             ischecked = False
             while not ischecked:
                 
-                techname.Click()
+                trycnt = 1
+                while trycnt < 10:
+                    try:
+                        techname.Click()
+                        trycnt = 11
+
+                    except:
+                        print("screen no response! try again")
+                        time.sleep(5)
+                        trycnt = trycnt+1
                 for c in techname.GetChildren():
                     if c.Name == "[Key] Text":
                         value = c.GetLegacyIAccessiblePattern().State
@@ -161,6 +171,11 @@ class UIScrapy():
     def GetTechnicalNameFromQueries(self):
         for queryName in QueryList:
             print(queryName)
+
+            exits = self.dbAllinOne.find_one({"queryName": queryName})
+            if exits:
+                continue
+
             self.CurrentQueryName = queryName
             self.db = self.client.db[queryName]
 

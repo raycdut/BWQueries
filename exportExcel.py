@@ -24,10 +24,10 @@ class ExportExcel():
             data.to_excel(collection_name+'.xlsx', sheet_name='sheet1', index=False)
 
     def exportOpsLinks(self):
-        collection = self.client.db['ZORH_MC03']
+        collection = self.client.db['allinone']
         data = pd.DataFrame(list(collection.find()))
         del data['_id']
-        data.to_excel('ZORH_MC03.xlsx', sheet_name='sheet1', index=False)
+        data.to_excel('allinone.xlsx', sheet_name='sheet1', index=False)
 
     def export_comments(self):
         products = self.client.db['Products']
